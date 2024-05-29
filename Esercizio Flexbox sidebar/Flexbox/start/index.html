@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Lessons</title>
+    <style>
+      :root {
+        font-style: normal;
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        display: flex;
+      }
+      .sidebar {
+        height: 100%;
+        width: 200px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .sidebar .logo {
+        margin-left: 60px;
+      }
+      .links ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        list-style: none;
+      }
+      .avatar1 {
+        width: 25px;
+        height: auto;
+      }
+      .avatar {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+      }
+      .links1 {
+        gap: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <h2>(Logo)</h2>
+      </div>
+      <div class="links">
+        <ul class="links1">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
+        </ul>
+      </div>
+      <div class="avatar">
+        <img
+          class="avatar1"
+          src="https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg"
+          alt="avatar"
+        />
+        <p>Maurilio Valenti</p>
+      </div>
+    </div>
+  </body>
+</html>
