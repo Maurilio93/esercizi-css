@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatrice</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 80px;
+        width: 400px;
+        border-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+      .calc {
+        border: 1px solid rgb(152, 151, 151);
+        font-size: xx-large;
+      }
+      .calc.barra {
+        grid-column: 1 / 5;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        color: white;
+        background-color: rgb(64, 65, 69);
+        padding-right: 10px;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+      .calc.uguale {
+        grid-row: span 4;
+        border-bottom-right-radius: 1rem;
+      }
+      .calc#operazione {
+        background-color: rgb(199, 221, 221);
+      }
+      .calc.uguale#color {
+        background-color: rgb(211, 80, 80);
+      }
+      .calc.num {
+        border-bottom-left-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc barra">0</div>
+      <button class="calc" id="operazione">+</button>
+      <button class="calc" id="operazione">-</button>
+      <button class="calc" id="operazione">x</button>
+      <button class="calc" id="operazione">÷</button>
+      <button class="calc">7</button>
+      <button class="calc">8</button>
+      <button class="calc">9</button>
+      <button class="calc uguale" id="color">=</button>
+      <button class="calc">4</button>
+      <button class="calc">5</button>
+      <button class="calc">6</button>
+      <button class="calc">1</button>
+      <button class="calc">2</button>
+      <button class="calc">3</button>
+      <button class="calc num">0</button>
+      <button class="calc">.</button>
+      <button class="calc zero">AC</button>
+    </div>
+  </body>
+</html>
