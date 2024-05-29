@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      nav {
+        background-color: rgb(15, 31, 31);
+        color: #fff;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      nav h1 {
+        padding: 0;
+        margin: 0;
+        margin-top: auto;
+        display: inline;
+        justify-content: space-between;
+      }
+      nav ul {
+        padding: 0;
+        margin: 0;
+        display: inline;
+        justify-content: space-between;
+      }
+      nav ul li {
+        padding: 0;
+        margin: 0;
+        display: inline;
+        justify-content: space-between;
+      }
+      .option {
+        color: white;
+        margin-right: auto;
+        margin-left: 20px;
+        margin-top: 15px;
+      }
+      .link,
+      .link2 {
+        color: white;
+        text-decoration: none;
+      }
+      .link:hover,
+      .link2:hover {
+        text-decoration: underline;
+      }
+      .link2 {
+        color: grey;
+        margin-left: 5px;
+      }
+      .dropdown {
+        background-color: inherit;
+        color: gray;
+        border: none;
+      }
+      .dbutton {
+        border: none;
+        background-color: inherit;
+        color: gray;
+      }
+      .search {
+        background-color: inherit;
+        color: green;
+        border: 2px solid green;
+        border-radius: 4px;
+        margin-top: 5px;
+        height: 30px;
+      }
+      .search:hover {
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        
+      }
+      .searchbox {
+        height: 30px;
+        width: 200px;
+        border-radius: 4px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Navbar</h1>
+      <ul class="option">
+        <li><a class="link" href="">Home</a></li>
+        <li><a class="link2" href="">Link</a></li>
+        <li>
+          <select class="dropdown" name="Dropdown">
+            <option value="Dropdown">Dropdown</option>
+          </select>
+        </li>
+        <li><button class="dbutton">Disabled</button></li>
+      </ul>
+      <ul>
+        <input class="searchbox" type="text" placeholder="Search" />
+        <button class="search">Search</button>
+      </ul>
+    </nav>
+  </body>
+</html>
