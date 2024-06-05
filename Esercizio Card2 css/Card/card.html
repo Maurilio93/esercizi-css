@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --background-color: #011212;
+        --text-color: #ffffff;
+
+        --card-padding: 20px;
+        --card-border-radius: 10px;
+        --max-width: 800px;
+      }
+
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .card {
+        background-color: var(--card-background-color);
+        padding: var(--card-padding);
+        border-radius: var(--card-border-radius);
+        max-width: var(--max-width);
+        width: 100%;
+        box-shadow: 0px 5px 8px #ff8800;
+      }
+
+      .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .card figcaption {
+        text-align: center;
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      .card h3 {
+        margin-top: 20px;
+      }
+
+      .card p {
+        line-height: 1.6;
+      }
+
+      .card a {
+        color: #ff8800;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        text-decoration: underline;
+      }
+
+      .card ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .card ul li {
+        margin: 10px 0;
+      }
+
+      .card ul li a {
+        color: #ff8800;
+      }
+
+      .card ul li a:hover {
+        text-decoration: underline;
+      }
+      .description {
+        text-align: center;
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+      .footer {
+        text-align: center;
+      }
+      hr {
+        border: 0;
+        border-bottom: 2px solid #ff8800;
+        margin: 20px 0 20px -40px;
+        margin-right: -20px;
+      }
+      .separator{
+        border: 0;
+        border-bottom: 2px solid #ff8800;
+        margin: 20px 0 20px -20px;
+        margin-right: -20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <article>
+        <figure>
+          <img
+            src="https://tourismmedia.italia.it/is/image/mitur/20210401173355-cattedrale-di-palermo-sicilia-gettyimages-691244576-1?wid=1600&hei=900&fit=constrain,1&fmt=webp"
+            alt="Città di Palemro"
+          />
+          <figcaption>La Città di Palermo</figcaption>
+        </figure>
+      </article>
+      <div class="description">
+        <hr />
+        <h3>La Cattedrale</h3>
+        <p>
+          La Basilica Cattedrale Metropolitana Primaziale della Santa Vergine
+          <br />
+          Maria Assunta, nota semplicemente come Duomo oppure Cattedrale di
+          <br />
+          Palermo, è il principale luogo di culto cattolico della città di
+          <br />
+          Palermo e sede arcivescovile dell'omonima arcidiocesi metropolitana
+          <br />
+          Dal 3 luglio 2015 fa parte del Patrimonio dell'umanità nell'ambito del
+          <br />
+          sito seriale Palermo arabo-normanna e le cattedrali di Cefalù e <br />
+          Monreale. se vuoi saperne di più, clicca
+          <a href="https://it.wikipedia.org/wiki/Cattedrale_di_Palermo">Qui</a>
+        </p>
+        <hr />
+      </div>
+      <div class="footer">
+        <div>
+          <p>An item</p>
+        </div>
+        <div>
+          <p>A second item</p>
+        </div>
+        <div>
+          <p>A third item</p>
+        </div>
+        <div>
+          <hr class="separator">
+          <ul>
+            <li><a href="#">Card Link</a></li>
+            <li><a href="#">Another Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
